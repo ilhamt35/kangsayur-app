@@ -12,7 +12,10 @@ class WhiteButton extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: 16),
       child: ElevatedButton(
         onPressed: () {},
-        child: Text(buttonText),
+        child: Text(
+          buttonText,
+          style: TextStyle(color: green),
+        ),
         style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(Colors.white),
             minimumSize: MaterialStateProperty.all(Size(double.infinity, 60)),

@@ -14,7 +14,6 @@ class LoginPage extends StatelessWidget {
 
     return Scaffold(
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             height: height / 2,
@@ -53,27 +52,102 @@ class LoginPage extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: 16),
-            child: Text(
-              'email',
-              style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 16),
+              child: Text(
+                'email',
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+              ),
             ),
           ),
-          // Container(
-          //   margin: EdgeInsets.fromLTRB(16, 16, 16, 16),
-          //   child: TextField(
-          //     decoration: InputDecoration(
-          //         fillColor: Color.fromRGBO(242, 242, 242, 1),
-          //         filled: true,
-          //         hintText: 'yourmail@mail.com',
-          //         border: OutlineInputBorder(
-          //             borderSide: BorderSide(
-          //               color: Color.fromRGBO(242, 242, 242, 1),
-          //             ),
-          //             borderRadius: BorderRadius.circular(10))),
-          //   ),
-          // )
+          Container(
+            margin: EdgeInsets.fromLTRB(16, 8, 16, 16),
+            child: TextField(
+              style: TextStyle(
+                fontSize: 12,
+              ),
+              decoration: InputDecoration(
+                  fillColor: Color.fromRGBO(242, 242, 242, 1),
+                  filled: true,
+                  hintText: 'yourmail@mail.com',
+                  hintStyle: TextStyle(color: Colors.grey),
+                  border: OutlineInputBorder(
+                      borderSide: BorderSide.none,
+                      borderRadius: BorderRadius.circular(10))),
+            ),
+          ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 16),
+              child: Text(
+                'email',
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+              ),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.fromLTRB(16, 8, 16, 8),
+            child: TextField(
+              obscureText: true,
+              style: TextStyle(
+                fontSize: 12,
+              ),
+              decoration: InputDecoration(
+                  suffixIcon: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: SvgPicture.asset(
+                      'assets/eye.svg',
+                    ),
+                  ),
+                  fillColor: Color.fromRGBO(242, 242, 242, 1),
+                  filled: true,
+                  hintText: 'your password',
+                  hintStyle: TextStyle(color: Colors.grey),
+                  border: OutlineInputBorder(
+                      borderSide: BorderSide.none,
+                      borderRadius: BorderRadius.circular(10))),
+            ),
+          ),
+          Align(
+            alignment: Alignment.centerRight,
+            child: Container(
+              margin: EdgeInsets.only(right: 16, bottom: 16),
+              child: Text(
+                'Forgot Password',
+                style: TextStyle(
+                  color: green,
+                  fontSize: 10,
+                ),
+              ),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: 16),
+            child: ElevatedButton(
+              onPressed: () {},
+              child: Text('Login'),
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(green),
+                  minimumSize:
+                      MaterialStateProperty.all(Size(double.infinity, 60)),
+                  shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10)))),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 16),
+            child: RichText(
+              text: TextSpan(style: TextStyle(color: green), children: [
+                TextSpan(text: 'Not have account? '),
+                TextSpan(
+                    text: 'Register',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+              ]),
+            ),
+          )
         ],
       ),
     );

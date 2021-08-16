@@ -12,12 +12,16 @@ class GreenButton extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: 16),
       child: ElevatedButton(
         onPressed: () {},
-        child: Text(buttonText),
+        child: Text(
+          buttonText,
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        ),
         style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(green),
             minimumSize: MaterialStateProperty.all(Size(double.infinity, 60)),
             shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10)))),
+                borderRadius: BorderRadius.circular(10))),
+            elevation: MaterialStateProperty.all(0)),
       ),
     );
   }

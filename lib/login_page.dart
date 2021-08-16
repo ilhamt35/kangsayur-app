@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:kangsayur_app/colors.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'green_button.dart';
+
 class LoginPage extends StatelessWidget {
   const LoginPage({
     Key? key,
@@ -124,18 +126,8 @@ class LoginPage extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: 16),
-            child: ElevatedButton(
-              onPressed: () {},
-              child: Text('Login'),
-              style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(green),
-                  minimumSize:
-                      MaterialStateProperty.all(Size(double.infinity, 60)),
-                  shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)))),
-            ),
+          GreenButton(
+            buttonText: 'Login',
           ),
           Container(
             margin: EdgeInsets.only(top: 16),

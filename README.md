@@ -2,10 +2,7 @@
 
 Example App
 
-
-
-https://user-images.githubusercontent.com/57026317/129814441-5d5387eb-0756-4c7b-afd8-ba022f378dc1.mp4
-
+![Video-Merekam-1](https://user-images.githubusercontent.com/57026317/129814610-3f472622-4aca-400e-bdb1-90fab267f993.gif)
 
 
 ## Getting Started

@@ -23,7 +23,8 @@ class WhiteButton extends StatelessWidget {
             shape: MaterialStateProperty.all(RoundedRectangleBorder(
                 side: BorderSide(color: green, width: 1.5),
                 borderRadius: BorderRadius.circular(10))),
-            elevation: MaterialStateProperty.all(0)),
+            elevation: MaterialStateProperty.all(0),
+            overlayColor: MaterialStateProperty.all(Colors.grey[300])),
       ),
     );
   }

@@ -1,6 +1,12 @@
 # kangsayur_app
 
-A new Flutter project.
+Example App
+
+
+
+https://user-images.githubusercontent.com/57026317/129814441-5d5387eb-0756-4c7b-afd8-ba022f378dc1.mp4
+
+
 
 ## Getting Started
 

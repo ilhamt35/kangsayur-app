@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:kangsayur_app/green_button.dart';
+import 'package:kangsayur_app/login_page.dart';
 import 'package:kangsayur_app/white_button.dart';
 
 import 'colors.dart';
@@ -43,7 +44,14 @@ class LoginRegister extends StatelessWidget {
             ],
           ),
         ),
-        GreenButton(buttonText: 'Login'),
+        GreenButton(
+          buttonText: 'Login',
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return LoginPage();
+            }));
+          },
+        ),
         SizedBox(
           height: 16,
         ),

@@ -35,6 +35,20 @@ class LoginPage extends StatelessWidget {
                     ),
                   ),
                   Positioned(
+                      top: 4,
+                      left: 4,
+                      child: SafeArea(
+                        child: IconButton(
+                          icon: Icon(
+                            Icons.arrow_back,
+                            color: Colors.white,
+                          ),
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                        ),
+                      )),
+                  Positioned(
                     right: 16,
                     top: 60,
                     child: SvgPicture.asset(
@@ -129,6 +143,7 @@ class LoginPage extends StatelessWidget {
             ),
             GreenButton(
               buttonText: 'Login',
+              onPressed: () {},
             ),
             Container(
               margin: EdgeInsets.only(top: 16),

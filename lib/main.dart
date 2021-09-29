@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kangsayur_app/view/home_page.dart';
 import 'package:kangsayur_app/view/login_register_page.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginRegisterPage(),
+      home: HomePage(),
     );
   }
 }

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kangsayur_app/colors.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
-import 'green_button.dart';
+import 'package:kangsayur_app/component/green_button.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({

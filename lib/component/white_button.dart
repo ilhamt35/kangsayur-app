@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'colors.dart';
+import 'package:kangsayur_app/colors.dart';
 
 class WhiteButton extends StatelessWidget {
   final String buttonText;

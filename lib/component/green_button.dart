@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'colors.dart';
+import 'package:kangsayur_app/colors.dart';
 
 class GreenButton extends StatelessWidget {
   final VoidCallback? onPressed;
